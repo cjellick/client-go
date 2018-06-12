@@ -324,6 +324,7 @@ func newAzureTokenSourceDeviceCode(environment azure.Environment, clientID strin
 	}, nil
 }
 
+// CAJ TEST COMMIT
 func (ts *azureTokenSourceDeviceCode) Token() (*azureToken, error) {
 	oauthConfig, err := adal.NewOAuthConfig(ts.environment.ActiveDirectoryEndpoint, ts.tenantID)
 	if err != nil {
